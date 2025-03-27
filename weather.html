@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Live Weather Information</h1>
+
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name" />
+            <button onclick="searchWeather()">Search</button>
+        </div>
+
+        <div class="weather-info">
+            <p id="city-name"></p>
+            <p id="date"></p>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="main-weather"></p>
+            <table>
+                <tr>
+                    <th>Temperature (°C)</th>
+                    <td id="temperature"></td>
+                </tr>
+                <tr>
+                    <th>Pressure (hPa)</th>
+                    <td id="pressure"></td>
+                </tr>
+                <tr>
+                    <th>Humidity (%)</th>
+                    <td id="humidity"></td>
+                </tr>
+                <tr>
+                    <th>Wind Speed (m/s)</th>
+                    <td id="wind-speed"></td>
+                </tr>
+                <tr>
+                    <th>Wind Direction (°)</th>
+                    <td id="wind-direction"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="loading" id="loading">Loading weather data...</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+<footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Live Weather Information.</p>
+            <p>Powered by OpenWeather API</p>
+        </div>
+    </footer>
+</html>
